@@ -1,0 +1,58 @@
+@use "../general-styles/padding" as pad;
+@use "../general-styles/typography" as type;
+
+.hero {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  // flex-wrap: wrap;
+  &__card {
+    background-color: rgba(222, 222, 235, 0.9);
+    border-radius: 12rem;
+    padding: pad.padding-st-v("l");
+    justify-content: center;
+    // color: var();
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 25%;
+    height: 41vh;
+
+
+
+    h2 {
+      text-align: center;
+      
+    }
+
+
+
+    &-para {
+      font-size: type.font-size-st("s");
+      color: var(--color-navy-dark);
+    }
+
+    a {
+
+      align-self: center;
+
+
+    }
+    &:hover {
+      background-color: var(--color-white);
+      transform: translateY(-1rem);
+      transition: all 0.38s ease-in-out;
+      p {
+        color: var(--color-navy-dark);
+      }
+    }
+  }
+}
+
+
+
+.ff {
+  background-color: var(--color-yellow);
+  height: 2rem;
+  width: 100%;
+}

@@ -1,0 +1,57 @@
+@use "../general-styles/padding" as pad;
+@use "../general-styles/gradient" as grad;
+@use "../general-styles/colors" as clrs;
+@use "../general-styles/typography" as type;
+
+@media screen and (max-width: 800px) {
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #a6a8a6;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+    background: var(--gradient-cyan);
+    position: absolute;
+    right: 4rem;
+    top: 0rem;
+    z-index: 99;
+    position: sticky;
+
+    border-radius: 6px;
+  }
+
+  .nav-menu li {
+    text-align: center;
+    border-top: 1px solid #444;
+  }
+
+  .dropdown-menu {
+    position: static;
+    background-color: #333;
+  }
+
+  // hero styling start
+  .hero {
+    flex-direction: column;
+
+    &__content {
+    }
+
+    &__card {
+      width: 100%;
+      border-radius: 14px;
+      height:30%;
+
+      a {
+        align-self: end;
+      }
+    }
+  }
+}

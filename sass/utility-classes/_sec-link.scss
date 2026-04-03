@@ -1,0 +1,18 @@
+
+// In _sec-link.scss
+@use "../general-styles/colors" as clrs;
+@use "../general-styles/padding" as pad;
+@use "../general-styles/typography" as type;
+
+
+
+.sec-link {
+  color: var(--color-navy-dark);
+
+  font-size: type.font-size-st(xs);
+  align-self: flex-start;
+
+  &:hover {
+    color: var(--color-blue-bright);
+  }
+}
